@@ -1,0 +1,99 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input,button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-weight: normal;
+    vertical-align: baseline;
+
+}
+
+em, i, u {
+    font-style: normal;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+input,button{ border: none;outline: none;}
+a{
+    text-decoration: none!important;
+    color: #666;
+}
+*,
+::before,
+::after{
+  /*设置所有的宽度：以边框开始计算*/
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+}
+a:hover{
+    color: #ff4400;
+    text-decoration: none!important;
+}
+a:active{
+    color: #ff4400!important;
+}
+li{
+    list-style: none;
+}
+html, body {
+    font-size: 14px;
+    color: #323232;
+    font-family: "Microsoft YaHei", "Arial Regular",PingFangSC-Regular,Helvetica,"Droid Sans",Arial,sans-serif;
+	 /*overflow-x: hidden;*/
+   width:100%;
+}
+img{vertical-align:top;}
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px white inset;  
+}
+.clearfix:before,
+.clearfix:after{
+   content:'';
+   height:0;
+   display:block;
+   line-height:0;
+   visibility:hidden;
+   clear:both;
+}
+.clearfixed{zoom:1;}
+.f_left{
+  float:left;   
+}
+.f_right{
+  float:right;  
+}
+.hide{ display: none}
+.show{ display: block}
+.inner{ width: 1200px; margin: 0 auto}
+.mdt10{
+    margin-bottom: 10px;
+}
+.mdb20{
+    margin-bottom: 20px;
+}
+.mdt20{
+    margin-top: 20px;
+}
+.mdt30{
+    margin-top: 30px;
+}
+.wrapper{
+    width:;
+}
+.container{
+    width: 100%!important;
+    padding: 0;
+}

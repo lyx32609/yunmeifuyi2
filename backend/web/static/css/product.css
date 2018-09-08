@@ -1,0 +1,262 @@
+.wrap{
+	max-width:1500px;
+	min-width: 1102px;
+	width:100%;
+	height:auto;
+	overflow: hidden;
+	background:url(../images/bg.jpg) center no-repeat;
+	background-size: 100% 100%;
+	color:#fff;
+	padding:50px 25px 30px 25px;	
+}
+.container{
+	width:100%;
+	margin:0 auto;
+}
+/* 公共样式 */
+.container h5{	
+    width:100px;	
+    margin:0px 0 30px 0;
+	font-size:15px;
+	line-height: 27px;
+	font-weight: normal;
+	text-align: center;
+	background: url(../images/busintit2.png) no-repeat center;
+	background-size:100% 100%; 
+}
+.container h5.center{
+    width:100px;
+    margin:0px auto 30px auto;
+}
+/* 业务管理 */
+.contleft{
+   width:63%;
+   float: left;
+}
+.tit{
+	width:100%;
+    height:60px;
+	line-height: 60px;
+	font-size: 30px;
+	
+}  
+.tit i{
+	color:#00e4ff;
+}
+.busintit{
+	padding:0 30px;
+	background:url(../images/busintit.png) no-repeat center;	
+}
+.visit,
+.path,
+.messages{
+	width:30%;
+}
+.path,
+.messages{
+	margin-left:20px;
+}
+
+
+.busincont{
+	width:100%;
+	margin:60px 0 0 0px;
+	padding:40px 0 30px 0;
+	padding-left:30px;
+    background: url(../images/businbg.png) no-repeat center;
+    background-size:100% 100%; 
+}
+.busincont img{
+	margin:0 auto;
+	display: block;
+}
+.usermeages{
+	width:100%;
+	min-height:140px;
+	max-height:200px;
+	height:100%;
+	margin-top:10px;
+}
+.usermeages:after,
+.busind:after{
+	content: '';
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:1px;
+	background: url(../images/line.png) no-repeat center;
+	background-size:100% 100%;
+}
+.usermeages:last-of-type:after,
+.busind:last-of-type:after{
+	background:transparent;
+}
+/*.usermeages canvas{
+	width:80%;
+	height:80%;
+}*/
+
+/* 考勤管理 */
+.contright{
+   width:36%;
+   float: right;
+}
+.checktit{
+	padding:0 30px;
+	background:url(../images/checktit.png) no-repeat center;	
+}
+.checkcont{
+	width:100%;
+	margin-top:30px;
+	padding:35px 0 20px 50px;
+    background: url(../images/checkbg.png) no-repeat center;
+    background-size:100% 100%; 
+}
+.checkcont h5{
+	margin-top:20px;
+}
+.checkdata{
+	width:85%;
+	height:150px;
+}
+.ratedata{
+	width:90%;
+	height:90px;
+	transform: translateY(-10px);
+}
+.growth-rate{
+	width:32%;
+	height:100%;
+}
+/* 配送联盟 */
+
+/* 业务计划 */
+.busindata{
+	width:85%;
+	height:230px;
+}
+.businrate{
+	margin:48px 0 0px 0;
+	width:90%;
+	height:90px;
+}
+.times{
+	width:100%;
+	height:50px;
+	margin:0 0 48px 0;
+}
+.times span{
+	font-size: 30px;
+	width:30%;
+	display:block;
+	float: left;
+	padding-left:3px;
+}
+/* 数据共享 */
+.managebg{
+	background: url(../images/managebg.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.managetit{
+	padding:0 30px;
+	background: url(../images/managetit.png) no-repeat center;
+}
+.records{
+	width:88%;
+}
+
+.datacenter{
+	min-height:145px;
+	max-height:200px;
+	height:100%;
+	margin-top:5px;
+}
+@media (min-width: 970px) and (max-width: 1200px){
+	.datashare img{
+		margin:8% auto;
+	}	
+}
+
+/* 用户分布图 */
+.usersleft{
+	width:46%;
+}
+.userscont{
+ 	width:100%;	
+ 	padding-left:0px;
+	background:url(../images/usersbg.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.userstit{
+	width:100%;
+	height:32px;
+	line-height: 32px;
+	margin-left:10px;
+}
+.userstit ul li{
+	font-size: 14px;
+	margin:0 0 0 20px;
+	padding:0px 20px;
+	text-align: center;
+	float: left;
+	background: url(../images/usertit2.png) no-repeat center;
+	background-size: 100% 100%;
+	cursor:pointer;
+}
+.userstit ul li.current{
+	background: url(../images/usertit2h.png) no-repeat center;
+	background-size: 100% 100%;
+}
+.usersdist{
+	width:95%;	
+	margin:0px auto 0 auto;
+}
+.userMap{
+	height:435px;
+	width:100%;
+}
+.anchorBL{   /* 隐藏百度地图的百度标志 */
+	display: none;
+}
+
+/* 运营状况 */
+.usersright{
+	width:53%;
+}
+.operacont{
+	width:100%;
+	background:url(../images/operbg.png) no-repeat center;
+	background-size: 100% 100%;
+}
+/* 联盟商户 */
+.alliance{
+	width:39%;
+	padding-right:15px;
+	background: url(../images/line2.png) no-repeat  right; 
+}
+/* 业务数据 */
+.operadata{
+	width:59%;
+}
+.busind{
+	width:85%;
+	min-height:140px;
+	max-height:200px;
+	height:100%;
+	margin-top:10px;
+	margin-left:10px;
+}
+.busindTwo{
+	width:90%;
+	height:140px;
+	margin-left: 10px;
+}
+.busind-rate{
+	width:25%;
+	min-height:140px;
+	max-height:200px;
+	height:100%;
+	margin:0 10px;
+}
+
+

@@ -1,0 +1,528 @@
+/* 隐藏 */
+.none{
+    display:none;
+}
+.float_f{
+    float: left;
+}
+label{
+    font-weight:normal;
+}
+.ml_20{
+    margin-left:20px;
+}
+.ml_6{
+    margin-left:6px;
+}
+.tit{
+    width:90%;
+    margin:0 auto;
+    padding:10px 0;
+}
+.tit_sub{
+    width:100%;
+    height:auto;
+    overflow: hidden;
+}
+.tit_sub h5{
+    float: left;
+    line-height: 30px;
+}
+.tit_sub ul{
+    width:94%;
+    height:auto;
+    overflow: hidden;
+    margin-bottom: 5px;
+    padding-left:20px;
+}
+.tit_sub ul li{
+    float:left;
+    width:13%;
+    text-align:center;
+    line-height: 30px;
+    margin:10px 5px 0 5px;
+    background: #eee;
+    border:1px solid #ccc;
+    border-radius: 3px;
+}
+.tit_sub ul li a{
+    width:100%;
+    display: block;
+}
+.tit_sub ul li a:hover{
+    cursor: pointer;
+    color:#fff;
+    background: #2299ef;
+    border:1px solid #4c97ce;
+}
+.tit_sub ul li.current a{
+    color:#fff;
+    background: #2299ef;
+    border:1px solid #4c97ce;
+}
+.tit_sub ul li:last-of-type{
+    margin:10px 0px 0 5px;
+}
+.cont{
+    width:90%;
+    margin:0 auto;
+    height:auto;
+    overflow: hidden;
+    background: #fff;
+}
+.cont_tit{
+    width:100%;
+    margin:10px 0px;
+}
+.cont_tit h5{
+    font-size:15px;
+    margin:15px 0 15px 15px;
+}
+.cont dl{
+    width:100%;
+    height:auto;
+}
+.cont dl dd{
+    position: relative;
+    margin:10px 0px 15px 35px;
+    line-height: 30px;
+    width:96%;
+    height:auto;
+    overflow: hidden;
+}
+.cont dl dd .more{
+    width:84%;
+    position: relative;
+    float: left;
+}
+.cont dl dd .more_cont{
+    width:100%;
+    float: left;
+    margin:0 0 10px 0;
+}
+.cont dl dd .more_cont .need{
+    position: relative;
+    float: left;
+    width:40%;
+}
+.cont dl dd .more_cont .seal{
+    width:29%;
+}
+.cont dl dd .more_cont input[type="text"]{
+    width:32%;
+}
+.cont dl dd .need input[type="text"]{
+    width:83%;
+}
+.cont dl dd .seal  input[type="text"]{
+    width:65%;
+}
+
+.cont dl dd .date{
+    width:84%;
+}
+.cont dl dd .date .date_box{
+    float: left;
+    position: relative;
+}
+.cont dl dd .date .date_box input[type="text"]{
+    width:100%;
+}
+/* 日期选择 */
+.ui-datepicker-title select{
+    color:#333;
+}
+
+.cont dl dd>label{
+    width:12%;
+    font-size: 15px;
+    display: inline;
+    float: left;
+}
+.cont dl dd label span{
+    color:red;
+    margin-right:10px;
+}
+.cont dl dd input[type="text"]{
+    width:84%;
+    border:1px solid #ccc;
+    padding:0 5px;
+    background: transparent;
+}
+.cont dl dd span>input[type="radio"]{
+    margin:0 2px 0 5px;
+}
+.cont dl dd input[type="file"]{
+    display: inline-block;
+    width:80px;
+}
+.cont dl dd span label{
+    width:auto;
+    margin:0 10px 0 0;
+}
+.cont dl dd .position_box{
+    width:84%;
+    float: left;
+    position: relative;
+}
+.cont dl dd label.position_a,
+.cont dl dd .position_box>input[type="button"],
+.cont dl dd .more>input[type="button"]{
+    width:80px;
+    text-align: center;
+    line-height: 27px;
+    position:absolute;
+    right:0px;
+    color:#fff;
+    background: #2299ef;
+    border:1px solid #66b6f1;
+    border-radius: 3px;
+    cursor:pointer;
+}
+.cont dl dd>textarea{
+    width:84%;
+    height:100px;
+    resize:none;
+    border:1px solid #ccc;
+}
+/*上传图片*/
+.file_list{
+    float: left;
+    width:80%;
+}
+#img_copy.coverBox/*,.cover*/
+{
+    position: fixed;
+    width:100%;
+    height:100%;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index:1055;
+    background: rgba(0,0,0,0.5);
+    cursor: pointer;
+}
+
+
+#imgBox{
+    position: relative;
+    width:8%;
+    margin:18px 18px 0px 0px;
+    cursor: pointer;
+    float: left;
+
+}
+#imgBox img{
+    width:100%;
+}
+#imgBox>em{
+    content: "";
+    width:15px;
+    height:15px;
+    position:absolute;
+    top:-6px;
+    right:-6px;
+    z-index:99;
+    background: url("../img/delete_img.png") no-repeat;
+    background-size: 100% 100%;
+}
+
+#img_copy img.active{
+    width:30%;
+    float:none;
+    display: block;
+    margin:0 auto;
+    -webkit-transform: translate(10%,20%);
+    -moz-transform: translate(10%,20%);
+    -ms-transform: translate(10%,20%);
+    -o-transform: translate(10%,20%);
+    transform: translate(10%,20%);
+    cursor: pointer;
+}
+#imgPicker{
+    height:32px;
+}
+
+/* 添加审批人*/
+#sel_Approver{
+    display: none;
+    position: fixed;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    width:100%;
+    height:100%;
+    background: rgba(0,0,0,0.5);
+    z-index:1055;
+}
+#sel_Approver .selBox{
+    width:590px;
+    height:auto;
+    position:absolute;
+    top:30%;
+    left:50%;
+    -webkit-transform: translate(-255px,-110px);
+    -moz-transform: translate(-255px,-110px);
+    -ms-transform: translate(-255px,-110px);
+    -o-transform: translate(-255px,-110px);
+    transform: translate(-255px,-110px);
+    background: #fff;
+    border:1px solid #eee;
+}
+.selBox_tit{
+    position: relative;
+    width:100%;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.selBox_tit h5{
+    line-height: 35px;
+    font-size:15px;
+    margin:0;
+}
+.selBox_tit span{
+    content:'';
+    width:18px;
+    height:18px;
+    position:absolute;
+    top:8px;
+    right:10px;
+    background: url("../img/delete_box.png") no-repeat;
+    background-size: 100% 100%;
+    cursor: pointer;
+}
+.selBox_cont{
+    width:100%;
+    margin:20px 0px;
+    padding:0 16px;
+}
+/*优化select样式*/
+.selBox_cont .select_box{
+    width:180px;
+    height:32px;
+    border:1px solid #ccc;
+    position: relative;
+    float: left;
+    margin:0 8px 0 0;
+}
+.selBox_cont .select_box select{
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding-left:10px;
+}
+.selBox_cont .select_box:after,
+.selBox_staff span{
+    content: "";
+    width: 12px;
+    height:12px;
+    background: url("../img/up_down.png") no-repeat center;
+    position: absolute;
+    right:5px;
+    top: 30%;
+    pointer-events: none;
+    background-size:80% 80%;
+}
+.selBox_staff{
+    width:180px;
+    height:auto;
+    display: inline-block;
+    position: relative;
+}
+.selBox_staff span{
+    background: #fff url("../img/up_down.png") center 2px  no-repeat;
+    background-size:80% 80%;
+}
+.selBox_staff>ul{
+    position: absolute;
+    top:32px;
+    width:100%;
+    padding: 0;
+    margin:0;
+    background: #fff;
+    border:1px solid #ccc;
+    z-index: 1056;
+    display: none;
+}
+.selBox_staff>ul li{
+    padding:0 5px;
+    cursor:default;
+    line-height: 24px;
+}
+.selBox_staff>ul li:hover{
+    color: #fff;
+    background: #2299ef;
+}
+.selBox_staff>ul li.current{
+    color: #fff;
+    background: #2299ef;
+}
+.cont dl dd ul li label{
+    width:80%;
+    margin:0 0 0 5px;
+}
+.cont dl dd .selBox_staff input[type="text"]{
+    width:100%;
+    cursor:default;
+}
+#hidden_box{
+   width:74%;
+   border:0px solid #ccc;
+   outline: none;
+   display:inline-block;
+}
+/*审批人-显示列表*/
+ul#copy_staff{
+    padding:0px 0 0 0;
+    margin:0;
+    width:74%;
+    display: none;
+    /*border:1px solid #ccc;*/
+}
+ul#copy_staff li{
+    float: left;
+    margin:0 10px 10px 6px;
+    position: relative;
+    line-height: 27px;
+    height: 27px;
+    border:1px solid #ccc;
+    cursor: pointer;
+    position: relative;
+}
+ul#copy_staff li label{
+    width:100%;
+    padding:0 15px;
+}
+
+ul#copy_staff li em{
+    content:'';
+    position: absolute;
+    top:-6px;
+    right:-6px;
+    width:20px;
+    height:20px;
+    background: url("../img/delete_small.png") no-repeat;
+    background-size: 100% 100%;
+}
+/*添加审批人*/
+.bottom .bottom_app{
+    padding: 20px 20px 0px 20px;
+}
+.bottom .bottom_app>span{
+    float: left;
+    display: inline-block;
+}
+.bottom_app textarea{
+    resize: none;
+    padding:0 0 0 5px;
+    border:0px solid #ccc;
+    width:80%;
+}
+.bottom .bottom_app ul li{
+    position: relative;
+    border-bottom:1px solid #ccc;
+    padding:2px 10px;
+}
+.bottom .bottom_app ul li:last-of-type{
+    border:0px solid #ccc;
+}
+.bottom .bottom_app ul li input{
+    display: inline-block;
+    text-align: center;
+    width:80px;
+}
+.bottom .bottom_app ul li button{
+    background: #2299ef;
+    color:#fff;
+    border:1px solid #2299ef;
+    height:24px;
+    line-height: 24px;
+    padding:0 10px;
+    margin:2px 0;
+}
+.bottom .bottom_app ul li>em,
+.bottom .bottom_app ul li>i{
+    width: 18px;
+    height: 18px;
+    border: 1px solid #999;
+    margin-top: 6px;
+    background: url("../../images/order_up.png") no-repeat center;
+    background-size: 80% 80%;
+    cursor: pointer;
+}
+.bottom .bottom_app ul li>i{
+    position: absolute;
+    right: 8%;
+    background: url("../../images/order_down.png") no-repeat center;
+    background-size: 80% 80%;
+}
+
+#sel_Approver .confirm_box{
+   border:1px solid #ccc;
+}
+/* 提示信息 */
+.cont em{
+    position: absolute;
+    right:5%;
+    top:2px;
+    font-size: 12px;
+    font-style:normal;
+    color:red;
+}
+.position_em em{
+    right:13%;
+}
+#send{
+    width:100%;
+}
+#send input[type="submit"],
+#send_app{
+    display: block;
+    width:230px;
+    line-height: 30px;
+    margin:35px auto;
+    background: #3c8dbc;
+    border:1px solid #4585ab;
+    color:#fff;
+    border-radius: 3px;
+}
+
+
+/* 附件预览 */
+.cover{
+    display: none;
+}
+.cover a{
+    margin:0 15px 0 0;
+}
+.cover a:last-of-type{
+    margin:0;
+}
+/*
+.cover iframe{
+    width:60%;
+    margin:0 auto;
+    display: block;
+    border:10px solid #666;
+    background: #fff;
+    display: none;
+}
+.cover em{
+    position: absolute;
+    right:10px;
+}
+*/
+
+/* 文件删除 */
+.file-panel{
+    background: transparent;
+}
+
+

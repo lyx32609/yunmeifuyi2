@@ -1,0 +1,87 @@
+<?php
+
+namespace app\models;
+
+use Yii;
+
+/**
+ * This is the model class for table "{{%user}}".
+ *
+ * @property string $id
+ * @property string $staff_code
+ * @property string $username
+ * @property string $password
+ * @property string $access_token
+ * @property string $token_createtime
+ * @property string $name
+ * @property string $phone
+ * @property string $head
+ * @property string $domain_id
+ * @property string $group_id
+ * @property string $department_id
+ * @property integer $is_select
+ * @property integer $rank
+ * @property string $cid
+ * @property string $time
+ * @property integer $leave
+ */
+class User extends \yii\db\ActiveRecord
+{
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return '{{%user}}';
+    }
+
+    /**
+     * @return \yii\db\Connection the database connection used by this AR class.
+     */
+    public static function getDb()
+    {
+        return Yii::$app->get('dbofficial');
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['staff_code', 'username', 'password', 'domain_id', 'group_id', 'department_id'], 'required'],
+            [['staff_code', 'token_createtime', 'domain_id', 'group_id', 'department_id', 'is_select', 'rank', 'time', 'leave'], 'integer'],
+            [['username', 'password'], 'string', 'max' => 50],
+            [['access_token', 'cid'], 'string', 'max' => 32],
+            [['name', 'phone'], 'string', 'max' => 20],
+            [['head'], 'string', 'max' => 255],
+            [['username'], 'unique'],
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => Yii::t('app', 'ID'),
+            'staff_code' => Yii::t('app', 'Staff Code'),
+            'username' => Yii::t('app', 'Username'),
+            'password' => Yii::t('app', 'Password'),
+            'access_token' => Yii::t('app', 'Access Token'),
+            'token_createtime' => Yii::t('app', 'Token Createtime'),
+            'name' => Yii::t('app', 'Name'),
+            'phone' => Yii::t('app', 'Phone'),
+            'head' => Yii::t('app', 'Head'),
+            'domain_id' => Yii::t('app', 'Domain ID'),
+            'group_id' => Yii::t('app', 'Group ID'),
+            'department_id' => Yii::t('app', 'Department ID'),
+            'is_select' => Yii::t('app', 'Is Select'),
+            'rank' => Yii::t('app', 'Rank'),
+            'cid' => Yii::t('app', 'Cid'),
+            'time' => Yii::t('app', 'Time'),
+            'leave' => Yii::t('app', 'Leave'),
+        ];
+    }
+}

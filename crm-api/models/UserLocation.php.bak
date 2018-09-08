@@ -1,0 +1,73 @@
+<?php
+
+namespace app\models;
+
+use Yii;
+
+
+/**
+ * This is the model class for table "{{%user_location}}".
+ *
+ * @property integer $id
+ * @property integer $shop_id
+ * @property integer $bing_id
+ * @property string $name
+ * @property string $longitude
+ * @property string $latitude
+ * @property integer $user
+ * @property integer $time
+ * @property integer $type
+ * @property integer $domain
+ */
+class UserLocation extends \yii\db\ActiveRecord
+{
+    /**
+     * @inheritdoc
+     */
+    public static function tableName()
+    {
+        return '{{%user_location}}';
+    }
+
+    /**
+     * @return \yii\db\Connection the database connection used by this AR class.
+     */
+    public static function getDb()
+    {
+        return Yii::$app->get('dbofficial');
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function rules()
+    {
+        return [
+            [['shop_id', 'bing_id', 'type','user','time', 'domain'], 'integer'],
+            [['user', 'type', 'domain'], 'required'],
+            [['longitude', 'latitude'], 'number'],
+            [['name'], 'string', 'max' => 200],
+        ];
+    }
+
+    /**
+     * @inheritdoc
+     */
+    public function attributeLabels()
+    {
+        return [
+            'id' => 'ID',
+            'shop_id' => '店铺id',
+            'bing_id' => '关联客户id',
+            'name' => '店铺、客户名称',
+            'longitude' => '经度',
+            'latitude' => '纬度',
+            'user' => '业务员',
+            'time' => '定位时间',
+            'type' => '定位来源 0：业务回访 1：新增业务',
+            'domain' => '地区',
+        ];
+    }
+
+
+}
